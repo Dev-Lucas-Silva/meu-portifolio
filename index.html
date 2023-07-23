@@ -8,11 +8,13 @@
   <title>Lucas - Desenvolvedor Front End</title>
   <meta name="description" content="Desenvolvedor Front End e UX/UI Designer Localizado na Bahia">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
   <header class="header">
-    <h1>Oi, sou Lucas.</h1>
+    <h1 data-anime="200" class="fadeInUp">Oi, sou Lucas.</h1>
     <nav>
       <ul class="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
@@ -23,17 +25,17 @@
   </header>
 
   <main class="introducao">
-    <img src="./img/foto-perfil.png" alt="Foto de perfil">
-    <div>
+    <img data-anime="400" class="fadeInUp" src="./img/foto-perfil.png" alt="Foto de perfil">
+    <div data-anime="600" class="fadeInUp">
       <h1>Desenvolvedor<br>Front End </h1>
       <p>Localizado na Bahia 🏖</p>
     </div>
   </main>
 
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
+  <section data-anime="800" class="experiencia fadeInUp" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. </p>
+      <p class="experiencia-texto">Tenho 27 anos, e sou estudante de Front-end e UI/UX Designer. Estou em busca de uma oportunidade de ingressar no mercado de tecnologia. Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. </p>
 
       <a href="https://dev-lucas-silva.github.io/bikcraft.github.io/">
         <div class="empresa">
@@ -71,7 +73,7 @@
         <ul class="faculdade-lista">
           <li class="faculdade">
             <span class="faculdade-tipo">Em breve estarei cursando</span>
-            <h3 class="faculdade-curso">Analise e desenvolvimento de softwarwe</h3>
+            <h3 class="faculdade-curso">Análise e Desenvolvimento de Software</h3>
             <span class="faculdade-instituicao">Ensino superior</span>
           </li>
 
@@ -81,7 +83,7 @@
           <div class="cursos">
             <h3>Cursos Intensivos</h3>
             <ul>
-              <li>HTML e CSS para Iniciantes <span>50h</span></li>
+              <li>HTML e CSS para Iniciantes | Origamid<span>50h</span></li>
             </ul>
           </div>
           <div class="idiomas">
@@ -99,13 +101,20 @@
     <div class="footer-container">
       <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
       <ul class="footer-contato">
-        <li><a href="mailto:desenvolvedor.lucas.dev@gmail.com">E-Mail</a></li>
-        <li><a href="tel:+5575988574299">Tel: +55 75 98857-4299</a></li>
-        <li><a href="https://github.com/Dev-Lucas-Silva">GitHub</a></li>
+        <li><a href="mailto:desenvolvedor.lucas.dev@gmail.com">E-Mail</a>
+          <img class="email" data-clipboard-text="desenvolvedor.lucas.dev@gmail.com" src="./img/incone-copiar.png" alt="Copiar E-mail"width="34" height="35">
+        </li>
+        <li><a href="tel:+5575988574299">Telefone</a>
+          <img class="tel" data-clipboard-text="+5575988574299" src="./img/incone-copiar.png" alt="Copiar E-mail" width="34" height="35">
+        </li>
+        <li><a href="https://github.com/Dev-Lucas-Silva">GitHub</a>
+        </li>
       </ul>
     </div>
   </footer>
-
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/clipboard.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
