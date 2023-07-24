@@ -27,6 +27,11 @@
   z-index: -1;
 }
 
+.curriculo {
+  display: flex;
+ gap: 40px;
+}
+
 .introducao p {
   font-size: 1.5rem;
   color: #525252;

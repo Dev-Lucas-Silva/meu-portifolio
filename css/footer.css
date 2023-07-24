@@ -35,12 +35,16 @@
 
 .footer-contato li a {
   color: #ffffff;
-
 }
 
 .footer-contato li a:hover {
   color: #8f8f8f;
-  
+}
+
+.incones-links {
+  display: flex;
+  gap: 60px;
+  align-items: center;
 }
 
 .footer-copy {
