@@ -41,11 +41,6 @@
   color: #8f8f8f;
 }
 
-.incones-links {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
 
 .footer-copy {
   grid-column: 1 / -1;

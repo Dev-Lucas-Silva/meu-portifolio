@@ -27,9 +27,15 @@
   z-index: -1;
 }
 
+.incones-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .curriculo {
   display: flex;
- gap: 40px;
+  gap: 40px;
 }
 
 .introducao p {
