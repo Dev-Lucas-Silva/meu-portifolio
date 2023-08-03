@@ -28,6 +28,10 @@
 }
 
 .incones-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.incones-links div {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -62,13 +66,17 @@
     height: 10px;
     left: 0px;
   }
+  .incones-links {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;
   }
-  .introducao img {
+  .introducao .foto-perfil {
     display: none;
   }
 }
