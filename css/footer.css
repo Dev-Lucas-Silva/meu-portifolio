@@ -22,10 +22,10 @@
   cursor: pointer;
 }
 
-.footer-contato li {
-  display: flex;
+.footer-contato li  {
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr auto auto;
   font-weight: bold;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -41,6 +41,19 @@
   color: #8f8f8f;
 }
 
+.footer-contato img {
+  transition: transform 0.3s ease 0s;
+}
+
+.footer-contato span {
+  color:  #8f8f8f;
+  font-size: medium;
+  padding-right: 15px;
+}
+
+.footer-contato img:hover {
+  transform: scale(1.1);
+}
 
 .footer-copy {
   grid-column: 1 / -1;
