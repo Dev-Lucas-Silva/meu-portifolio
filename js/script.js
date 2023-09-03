@@ -1,6 +1,7 @@
 //scroll suave do menu interno
 const menuItems = document.querySelectorAll(".header-menu a");
 
+
 menuItems.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick);
 });
@@ -22,6 +23,25 @@ function scrollToPosition(to) {
     behavior: "smooth",
   });
 }
+
+//scroll botao voltar ao topo
+const scrollup = document.querySelector(".link-header");
+
+scrollup.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+document.addEventListener('scroll', ()=> {
+  if(window.scrollY > 500) {
+    scrollup.style.display = 'block';
+  }
+  else {
+    scrollup.style.display = 'none';
+  }
+});
+
 
 //animacoes do site
 if(window.SimpleAnime){

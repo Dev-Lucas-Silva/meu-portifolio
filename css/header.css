@@ -8,7 +8,6 @@
   text-align: center;
 }
 
-
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -34,9 +33,21 @@
   transition: 0.3s;
 }
 
-.header-menu a:hover::after
- {
+.header-menu a:hover::after {
   width: 100%;
+}
+
+.link-header {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  background: #f5f5f5;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid #8f8f8f;
+  cursor: pointer;
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -51,11 +62,18 @@
     border: solid 1px#f5f5f5;
   }
   .header a:hover {
-border: solid 1px #141414;
+    border: solid 1px #141414;
   }
   .header-menu a:hover::after {
     width: 0%;
-  
+  }
+  .link-header {
+    bottom: 10px;
+    right: 10px;
+    padding: 0;
   }
 }
+
+
+
 

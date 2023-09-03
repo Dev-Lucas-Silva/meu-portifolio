@@ -26,8 +26,7 @@
 .empresa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px 20px;
-  padding: 0px;
+  padding: 0 10px;
   background: #f5f5f5;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -37,14 +36,14 @@
 }
 
 .empresa img {
-  padding: 10px;
-  max-width: 300px;
+  padding: 20px 10px;
+  max-width: 250px;
   align-self: center;
   justify-self: center;
 }
 
 .empresa div {
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 .empresa div h3 {
@@ -69,7 +68,7 @@
 
 .empresa:hover {
   border: solid 2px #b6f829;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .empresa-ano {
