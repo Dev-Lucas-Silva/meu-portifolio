@@ -1,6 +1,6 @@
 .introducao {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 170px 20px 40px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -85,8 +85,9 @@
 @media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;
+    padding-top: 215px;
   }
   .introducao .foto-perfil {
-    display: none;
+  display: none;
   }
 }

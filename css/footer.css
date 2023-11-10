@@ -51,14 +51,14 @@
   transition: transform 0.3s ease 0s;
 }
 
+.footer-contato img:hover {
+  transform: scale(1.2);
+}
+
 .footer-contato span {
   color: #8f8f8f;
   font-size: medium;
   padding-right: 15px;
-}
-
-.footer-contato img:hover {
-  transform: scale(1.1);
 }
 
 .footer-copy {

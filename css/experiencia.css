@@ -108,7 +108,26 @@
   padding: 5px 10px;
 }
 
+@media (max-width: 1000px) {
+  .empresa {
+    grid-template-columns: 1fr 1fr;
+  }
+  .empresa .pri {
+    grid-row: 1 / -3;
+  }
+}
+@media (max-width: 900px) {
+  .empresa .pri {
+    grid-column: 1 / -1;
+  } 
+}
 @media (max-width: 800px) {
+  .empresa {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .empresa .pri {
+    grid-column:initial;
+  } 
   .experiencia {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -127,7 +146,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .empresa {
     grid-template-columns: 1fr;
   }
