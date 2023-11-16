@@ -67,6 +67,7 @@
   .introducao {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    padding: 120px 20px 40px 20px;
   }
   .introducao h1 {
     font-size: 2rem;
@@ -81,11 +82,15 @@
     gap: 20px;
   }
 }
+@media (max-width: 700px) {
+  .introducao {
+    padding: 40px 20px 40px 20px;
+  }
 
+}
 @media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;
-    padding-top: 215px;
   }
   .introducao .foto-perfil {
   display: none;
