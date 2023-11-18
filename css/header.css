@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  box-sizing: border-box;
   padding: 40px 20px;
   position: fixed;
   background: #ffffff;
@@ -13,7 +14,6 @@
 }
 
 .header .header-content {
-  margin-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,6 +109,7 @@
   .header {
     position: static;
   }
+
 }
 @media (max-width: 520px) {
   .header-menu.ativo {
